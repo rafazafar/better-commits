@@ -42,7 +42,7 @@
   "branch_type":{
     "enable": true,
     "initial_value": "CCIFACOMM",
-    "seperator": "-",
+    "separator": "-",
     "options": [
       {
         "value": "CCIFACOMM",
