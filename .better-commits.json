@@ -62,8 +62,8 @@
   },
   "branch_pre_commands": [
     "git stash",
-    "git checkout main",
-    "git pull -r origin main",
+    "git checkout test",
+    "git pull -r origin test",
     "npm install"
   ]
 }
