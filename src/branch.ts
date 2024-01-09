@@ -52,11 +52,11 @@ async function main(config: z.infer<typeof Config>) {
   }
 
   if (config.branch_type.enable) {
-    let initial_value = config.commit_type.initial_value;
+    let initial_value = config.branch_type.initial_value;
     const commit_type = await p.select({
       message: `Select a branch type`,
       initialValue: initial_value,
-      options: config.commit_type.options,
+      options: config.branch_type.options,
     });
     if (p.isCancel(commit_type)) process.exit(0);
     branch_state.type = commit_type;

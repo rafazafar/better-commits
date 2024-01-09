@@ -137,6 +137,17 @@ export const Config = z
       .object({
         enable: z.boolean().default(true),
         separator: z.enum(["/", "-", "_"]).default("/"),
+        initial_value: z.string().default(""),
+        options: z
+          .array(
+            z.object({
+              value: z.string(),
+              label: z.string().optional(),
+              hint: z.string().optional(),
+              emoji: z.string().emoji().optional(),
+            })
+          )
+          .default(DEFAULT_TYPE_OPTIONS),
       })
       .default({}),
     branch_ticket: z

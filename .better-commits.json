@@ -36,6 +36,26 @@
   "check_ticket": {
     "append_hashtag": true
   },
+  "branch_type":{
+    "enabled": true,
+    "initial_value": "CCIFACOMM",
+    "seperator": "-",
+    "options": [
+      {
+        "value": "CCIFACOMM",
+        "label": "CCIFACOMM"
+      },
+      {
+        "value": "",
+        "label": "none"
+      }
+    ]
+  },
+  "branch_ticket": {
+    "enabled": true,
+    "required": false,
+    "separator": "/"
+  },
   "branch_pre_commands": [
     "git stash",
     "git checkout main",
