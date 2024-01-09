@@ -36,8 +36,11 @@
   "check_ticket": {
     "append_hashtag": true
   },
+  "branch_user":{
+    "enable": false
+  },
   "branch_type":{
-    "enabled": true,
+    "enable": true,
     "initial_value": "CCIFACOMM",
     "seperator": "-",
     "options": [
@@ -51,6 +54,7 @@
       }
     ]
   },
+  "enable_worktrees": false,
   "branch_ticket": {
     "enabled": true,
     "required": false,
